@@ -1,24 +1,60 @@
 <!doctype html>
 <html>
-    <link rel="icon" type="image/icon" href="images/favicon.ico">
-    <style>
-	    body{ background-color: #F00000; color: #B8E5F0; 
+	<link rel="icon" 
+      type="image/icon" 
+      href="images/favicon.ico">
+	<style>
+		.parallax{
+			background-image: url("https://www.greenville.k12.sc.us/gvilleh/Upload/Uploads/spirit%20week.jpg");
+			min-height: 600px;
+			background-attachment: fixed;
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
 		}
-		h1 { text-align: ceter; color: #B8E5F0
+		.title{
+			background-color: rgba(255,0,0,.5);
+			text-align: center;
+			font-family: Palatino, "Palatino LT STD", "Palatino Linotype", "Book Antiqua", Georgia, serif;
 		}
+	
+		body {
+			background-color: #F00000;
+			color: #ffffff;
+		}
+		h1 {
+			text-align: center;
+			color: #FFFFFF
+		}
+		
 	</style>
-    <h1>I love myself</h1>
-	<h3>Octover 17, 2018</h3>
-	<h4>by me and only me</h4>
-	<h5>I have 3 test, 2 bottles of water and 5 fingers. </h5>
-	<img src="images/desert.jpg" alt="desert" width="100%">
-	</body> <h5 id="date"></h5>  //
-	<script> 
-	var d = new Date ();//setup a date object
-	var month = d.getMonth()+1;the month from the date object
-	var year = d.getFullYear(); // get the full year from the date oject 
-	var date = d.getDate(); 
-	var display = "" + month +"/"+ date+"/"+year;
-	document.get ElementById("date"). innerHTML =display;
+	<body>
+		<div class="title">
+			<h1>Greenville High Wins Spirit Week!</h1>
+			<h3>October 17, 2018</h3>
+		</div>
+		<div class="parallax"></div>
+		<div class="article" style="height:1000px;">
+			<p>We did it!  We finally won based on the fantastic efforts of our newest Student Body President, Myddie Parker.</p>
+		</div>
+	</body>
+	<h5 id="date"></h5>
+	<script>
+		var d = new Date();  //setup a date object 
+		var month = d.getMonth()+1;  // get the month from the date object
+		var year = d.getFullYear(); //get the full year from the date object
+		var date = d.getDate();
+		var display = "" + month + "/" + date + "/" + year;
+		document.getElementById("date").innerHTML = display;
 	</script>
-tml>
+</html>
+
+
+
+
+
+
+
+
+
+
